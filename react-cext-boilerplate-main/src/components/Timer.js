@@ -12,7 +12,7 @@ const Timer = ({ hours = 0, minutes = 0, seconds = 0 }) => {
                 setWork({work: false})
                 resetBreak()
             } else {
-                setWork({work: true})
+                setWork({work: true})g
                 reset()
             }
         }
