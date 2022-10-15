@@ -1,6 +1,6 @@
 {
-  "name": "React + Chrome Extension Boilerplate",
-  "description": "React based chrome extension boilerplate with live reload and Chrome Extensions Manifest Version 3!",
+  "name": "DandyGarden",
+  "description": "Productivity App to Help you study more efficiently",
   "version": "0.1.0",
   "manifest_version": 3,
   "icons": {
