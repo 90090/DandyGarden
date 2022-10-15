@@ -5,16 +5,16 @@ const PopupApp = () => {
   return (
 		<div className='main'>
 			<h1 className='main-header'>DandyGarden</h1>
-			<li>
+			<li className='button'>
 				<button>Lock Screen</button>
 			</li>
-			<li> 
+			<li className='button'> 
 				<button>Choose Timer</button>
 			</li>
-			<li>
+			<li className='button'>
 				<button>Task List</button>
 			</li>
-			<li>
+			<li className='button'>
 				<button>View Garden</button>
 			</li>
 		</div>

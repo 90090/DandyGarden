@@ -1,10 +1,13 @@
 .main {
+    margin: 0!important;
+    padding: 0!important;
     min-width:400px;
     min-height:400px;
     background-color: greenyellow;
 }
 .main-header {
     text-align: center; 
+    padding-top: 1.25em;
 }
 
 li {
@@ -14,10 +17,17 @@ li {
 }
 
 button {
+    width: 225px;
+    height: 50px;
+}
+
+button {
     font-size: 16px;
     background-color: greenyellow;
 }
 
 button:hover {
     background-color: green;
+    color: white;
+    cursor: pointer;
 }
