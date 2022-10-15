@@ -1,18 +1,21 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
 
 const Timer = ({ hours = 0, minutes = 0, seconds = 0 }) => { 
 
-    const [time, setTime] = React.useState({hours, minutes, seconds});
-    const [work, setWork] = React.useState({work: true});
-    
+    const [time, setTime] = useState({hours, minutes, seconds});
+    const [work, setWork] = useState(false);
+   
     const tick = () => {
    
         if (time.hours === 0 && time.minutes === 0 && time.seconds === 0) {
-            if(work) {
-                setWork({work: false})
+            
+            if(work) { 
+                toggleWork()      
                 resetBreak()
-            } else {
-                setWork({work: true})
+            } else{
+                
+                toggleWork()
                 reset()
             }
         }
@@ -21,13 +24,14 @@ const Timer = ({ hours = 0, minutes = 0, seconds = 0 }) => {
         } else {
             setTime({hours: time.hours, minutes: time.minutes, seconds: time.seconds - 1});
         }
-
     };
 
-    const reset = () => setTime({hours: 0, minutes: 25, seconds: 10});
+    const reset = () => setTime({hours: 0, minutes: 25, seconds: 0});
     const resetBreak = () => setTime({hours: 0, minutes: 5, seconds: 0});
 
-    React.useEffect(() => {
+    const toggleWork = () => setWork(!work);
+
+    useEffect(() => {
         const timerId = setInterval(() => tick(), 1000);
         return () => clearInterval(timerId);
     });
@@ -37,8 +41,7 @@ const Timer = ({ hours = 0, minutes = 0, seconds = 0 }) => {
             <p>{`${time.hours.toString().padStart(2, '0')}:${time.minutes
             .toString()
             .padStart(2, '0')}:${time.seconds.toString().padStart(2, '0')}`}</p> 
-            {/* <button onClick={start}>Resettt</button> */}
-            {/* <p>{work}</p> */}
+            
         </div>
     );
 }
