@@ -1,8 +1,22 @@
+import './popupApp.css';
+import React from 'react';
 
 const PopupApp = () => {
   return (
-		<div style={{minWidth:'400px', minHeight:"400px"}}>
-			<button id="button" class="openGarden">Open</button>
+		<div className='main'>
+			<h1 className='main-header'>DandyGarden</h1>
+			<li>
+				<button>Lock Screen</button>
+			</li>
+			<li> 
+				<button>Choose Timer</button>
+			</li>
+			<li>
+				<button>Task List</button>
+			</li>
+			<li>
+				<button id="button" >View Garden</button>
+			</li>
 		</div>
   );
 };
