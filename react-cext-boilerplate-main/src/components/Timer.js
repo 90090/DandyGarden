@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Timer = ({ hours = 0, minutes = 0, seconds = 0 }) => { 
 
@@ -12,7 +12,7 @@ const Timer = ({ hours = 0, minutes = 0, seconds = 0 }) => {
                 setWork({work: false})
                 resetBreak()
             } else {
-                setWork({work: true})g
+                setWork({work: true})
                 reset()
             }
         }
