@@ -6,7 +6,7 @@ import PopupApp from "./popupApp";
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 
 document.addEventListener('click',function(){
-  var btn = document.getElementById('button');
+  var btn = document.getElementById('viewGarden');
   btn.addEventListener('click', function() {
     chrome.tabs.create({
       url: 'option.html'

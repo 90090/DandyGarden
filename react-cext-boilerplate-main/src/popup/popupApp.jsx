@@ -15,13 +15,10 @@ const PopupApp = () => {
 				<button>Task List</button>
 			</li>
 			<li>
-				<button id="button" >View Garden</button>
+				<button id="viewGarden" >View Garden</button>
 			</li>
 		</div>
   );
 };
-<script src="popup.js"></script>
-
-
 
 export default PopupApp;
