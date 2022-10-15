@@ -14,8 +14,8 @@ const PopupApp = () => {
 			<li className='button'>
 				<button>Task List</button>
 			</li>
-			<li className='button'>
-				<button>View Garden</button>
+			<li>
+				<button id="viewGarden" >View Garden</button>
 			</li>
 		</div>
   );
