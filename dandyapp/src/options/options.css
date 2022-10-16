@@ -20,13 +20,18 @@
 .dandygarden {
     padding: 1em;
     margin-top: 1em;
-    margin-right: 1em;
+    margin-right: 5.5em;
+    color: rgb(0, 91, 0);
+    text-shadow: 1px 1px yellow;
+    
 }
 
 .points {
     background-color: green;
     color: white;
     padding: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     width: fit-content;
     border-radius: 5px;
     margin-top: 1em;
@@ -46,7 +51,7 @@
 
 .add-plant-button:hover {
     cursor: pointer;
-    background-color:rgb(83, 218, 124);
+    background-color:rgb(229 255 109);
     border: solid 2px rgb(5, 97, 5);
     color: black;
     font-weight: bold;
@@ -172,4 +177,26 @@
 
   .popup-description {
     margin-top: .5em;
+  }
+
+  .how-to-div {
+    float: right;
+    margin-top: 1em;
+    margin-right: 2em;
+    padding: 2em;
+    background-color:rgb(229 255 109);
+    border: 1px solid green;
+    border-radius: 10px;
+  }
+
+  .how-to-title {
+    text-align: center;
+    margin-bottom: 1.5em
+  }
+
+  .how-to-bullets {
+    margin-left: 1em;
+  }
+  .how-to-bullets li {
+    line-height: 2em;
   }
