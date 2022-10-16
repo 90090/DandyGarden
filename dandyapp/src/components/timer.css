@@ -1,0 +1,16 @@
+.timer-div {
+    padding: 1em;
+    background-color: green;
+    color: white;
+}
+
+.timer-div2 {
+    padding: 1em;
+    background-color: red;
+    color: white;
+}
+
+.timer-p {
+    font-size: 16px;
+    font-weight: bold;
+}

@@ -30,6 +30,8 @@ document.addEventListener('click',function(){
 // Render App in the entry point
 root.render(
   <React.StrictMode>
-    <button id="timer">Start</button>
+    <div class="timer-btn-div">
+      <button id="timer">Start Timer</button>
+    </div>
   </React.StrictMode>
 );
