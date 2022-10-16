@@ -16,6 +16,14 @@ document.body.insertBefore(
 
 const root = ReactDOM.createRoot(ContentScriptInsertionPoint);
 
+
+// Render App in the entry point
+root.render(
+  <React.StrictMode>
+    <button id="timer">Stp0pt</button>
+  </React.StrictMode>
+);
+
 document.addEventListener('click',function(){
   var btn = document.getElementById('timer');
   btn.addEventListener('click', function() {
@@ -24,9 +32,7 @@ document.addEventListener('click',function(){
     )
   });
 });
-
-
-
+]
 // Render App in the entry point
 root.render(
   <React.StrictMode>

@@ -24,16 +24,16 @@
   "options_page": "option.html",
   "content_scripts": [
     {
-      "matches": ["https://github.com/*"],
+      "matches": ["https://github.com/*","https://docs.google.com/*","https://*/*"],
       "js": ["./content.js"]
     }
   ],
   "web_accessible_resources": [
     {
       "resources": ["content.js"],
-      "matches": ["https://github.com/*"]
+      "matches": ["https://github.com/*","https://docs.google.com/*","https://*/*"]
     }
   ],
   "permissions": ["tabs", "scripting", "storage", "management","activeTab","nativeMessaging"],
-  "host_permissions": ["https://github.com/*", "http://localhost:3000/*"]
+  "host_permissions": ["https://github.com/*", "http://localhost:3000/*","https://docs.google.com/*","https://*/*"]
 }

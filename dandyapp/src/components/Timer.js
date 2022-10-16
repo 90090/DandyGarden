@@ -1,3 +1,4 @@
+/*global chrome*/
 import React from 'react';
 import { useEffect, useState } from 'react';
 import './timer.css';
@@ -6,12 +7,14 @@ const Timer = ({ hours = 0, minutes = 0, seconds = 0 }) => {
 
     const [time, setTime] = useState({hours, minutes, seconds});
     const [work, setWork] = useState(true);
-   
     const tick = () => {
    
         if (time.hours === 0 && time.minutes === 0 && time.seconds === 0) {
             
-            if(work) { 
+            if(work) {
+                chrome.runtime.sendMessage({complete: "points"}, function(response) { 
+                    console.log("points sent");
+                });
                 toggleWork()      
                 resetBreak()
                 

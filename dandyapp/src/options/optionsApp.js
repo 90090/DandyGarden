@@ -1,3 +1,4 @@
+/*global chrome*/
 import './options.css';
 import cactus from '../assets/img/cactus.png'
 import pink from '../assets/img/pink.png'
@@ -10,7 +11,17 @@ import Sunflower from './Sunflower';
 import React, { useState } from 'react';
 
 const OptionsApp = () => {
-
+  
+  chrome.runtime.onMessage.addListener(
+    function(request, sender, sendResponse) {
+      if(request.complete === "points"){
+        setPoints(points + 15)
+        
+        console.log("Options: point recieved from Timer")
+      }
+      
+    }
+  );
 
   const [pinks, setPinks] = useState([]); 
   function addPink() {  
