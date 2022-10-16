@@ -32,7 +32,7 @@ document.addEventListener('click',function(){
     )
   });
 });
-]
+
 // Render App in the entry point
 root.render(
   <React.StrictMode>
