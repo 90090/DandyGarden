@@ -59,7 +59,9 @@ Users can delegate tasks with different difficulty levels
 - Difficult: 30 points
 
 Persistance of data
+
 Larger variety of plants/flowers for users to purchase
+
 User can input different timer modes, for example if the user wants to work more or less time for each pomodoro
 
 ----
