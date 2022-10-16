@@ -1,7 +1,8 @@
+
 import React from "react";
-import CSApp from "./csApp";
 import ReactDOM from "react-dom/client";
 import "../assets/css/common.css";
+import CSApp from "./csApp";
 
 // Create Entry Point For React App
 const ContentScriptInsertionPoint = document.createElement("div");
@@ -15,9 +16,20 @@ document.body.insertBefore(
 
 const root = ReactDOM.createRoot(ContentScriptInsertionPoint);
 
+document.addEventListener('click',function(){
+  var btn = document.getElementById('timer');
+  btn.addEventListener('click', function() {
+    root.render(
+      <CSApp/>
+    )
+  });
+});
+
+
+
 // Render App in the entry point
 root.render(
   <React.StrictMode>
-    <CSApp />
+    <button id="timer">Start</button>
   </React.StrictMode>
 );
