@@ -72,8 +72,6 @@ Youtube Link: https://www.youtube.com/watch?v=7zWdYBp3RTA
 
 ----
 
-----
-
 ## Credits
 
 - Ethan Ligi: https://github.com/90090 
