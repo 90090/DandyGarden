@@ -31,8 +31,8 @@ const Timer = ({ hours = 0, minutes = 0, seconds = 0 }) => {
         }
     };
 
-    const reset = () => setTime({hours: 0, minutes: 0, seconds: 5});
-    const resetBreak = () => setTime({hours: 0, minutes: 0, seconds: 3});
+    const reset = () => setTime({hours: 0, minutes: 25, seconds: 0});
+    const resetBreak = () => setTime({hours: 0, minutes: 5, seconds: 0});
 
     const toggleWork = () => setWork(!work);
 
