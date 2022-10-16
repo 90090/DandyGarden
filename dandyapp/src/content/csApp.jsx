@@ -4,7 +4,7 @@ const CSApp = () => {
   return (
 
 		<div className="app-container">
-			<Timer hours={0} minutes={25} seconds={0}/>
+			<Timer hours={0} minutes={0} seconds={5}/>
 		</div>
 	);
 };

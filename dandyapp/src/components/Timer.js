@@ -1,16 +1,20 @@
+/*global chrome*/
 import React from 'react';
 import { useEffect, useState } from 'react';
 
 const Timer = ({ hours = 0, minutes = 0, seconds = 0 }) => { 
 
     const [time, setTime] = useState({hours, minutes, seconds});
-    const [work, setWork] = useState(false);
-   
+    const [work, setWork] = useState(true);
+    
     const tick = () => {
    
         if (time.hours === 0 && time.minutes === 0 && time.seconds === 0) {
             
-            if(work) { 
+            if(work) {
+                chrome.runtime.sendMessage({complete: "points"}, function(response) { 
+                    console.log("points sent");
+                });
                 toggleWork()      
                 resetBreak()
             } else{
@@ -26,8 +30,8 @@ const Timer = ({ hours = 0, minutes = 0, seconds = 0 }) => {
         }
     };
 
-    const reset = () => setTime({hours: 0, minutes: 25, seconds: 0});
-    const resetBreak = () => setTime({hours: 0, minutes: 5, seconds: 0});
+    const reset = () => setTime({hours: 0, minutes: 0, seconds: 5});
+    const resetBreak = () => setTime({hours: 0, minutes: 0, seconds: 3});
 
     const toggleWork = () => setWork(!work);
 
