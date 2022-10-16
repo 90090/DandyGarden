@@ -1,15 +1,5 @@
 # DandyGarden
 
-# Table of Contents
-## Purpose
-## Technologies Used
-## How to Install and Run
-## How to Start Your Pomodoro
-## How to Earn Points
-## How to Buy Plants
-## Future Implementations
-## Credits
-
 ## Purpose
 
 The main goal of this extension is to help you study effectively with the pomodoro technique. The pomodoro technique lets you complete your tasks in intervals of 25 minutes of work and 5 minutes of rest called pomodoros. You continue these intervals until you finish the task you wanted to complete. After every pomodoro, you earn points which you can use to purchase plants for your garden.
