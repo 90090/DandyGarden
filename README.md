@@ -38,14 +38,7 @@ At the top of the screen you want to work on there will be a start button. Once 
 
 Navigate to your garden by clicking on the view garden button on the extension. You must have the window always open so you can accumulate your points. If you close this window, you lose your points and will have to start your garden over. 
 
-There are two ways to earn points:
-- After every pomodoro interval, you earn 15 points
-- You can also delegate tasks with different difficulty levels
-    - Easy: 5 points
-    - Intermediate: 15 points
-    - Difficult: 30 points
-
-Your overall points will automatically update after the pomodoro or completion of a task.
+After every pomodoro interval, you earn 15 points. Your overall points will automatically update after each pomodoro.
 
 ## How to Buy Plants
 
@@ -59,6 +52,15 @@ What type of plants can you buy?
 When you buy a plant, the plant arrives in your garden and decrements your overall points. From there, you can now rearrange your plant to anywhere in your garden.
 
 ## Future Implementations
+
+Users can delegate tasks with different difficulty levels
+- Easy: 5 points
+- Intermediate: 15 points
+- Difficult: 30 points
+
+Persistance of data
+Larger variety of plants/flowers for users to purchase
+User can input different timer modes, for example if the user wants to work more or less time for each pomodoro
 
 ----
 
