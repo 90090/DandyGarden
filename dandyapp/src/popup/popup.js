@@ -3,7 +3,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import PopupApp from "./popupApp";
 
-const root = ReactDOM.createRoot(document.querySelector("#root"));
+
+const page = ReactDOM.createRoot(document.querySelector("#root"));
 
 document.addEventListener('click',function(){
   var btn = document.getElementById('viewGarden');
@@ -15,7 +16,9 @@ document.addEventListener('click',function(){
 });
 
 
-root.render(
+
+
+page.render(
   <React.StrictMode>
     <PopupApp />
   </React.StrictMode>

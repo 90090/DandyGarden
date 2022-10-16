@@ -5,7 +5,7 @@ const PopupApp = () => {
   return (
 		<div className='main'>
 			<h1 className='main-header'>DandyGarden</h1>
-			<li className='button'>
+			<li id = "lockScreen" className='button'>
 				<button>Lock Screen</button>
 			</li>
 			<li className='button'> 

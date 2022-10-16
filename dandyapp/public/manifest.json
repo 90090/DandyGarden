@@ -34,6 +34,6 @@
       "matches": ["https://github.com/*"]
     }
   ],
-  "permissions": ["tabs", "scripting", "storage", "management","activeTab"],
+  "permissions": ["tabs", "scripting", "storage", "management","activeTab","nativeMessaging"],
   "host_permissions": ["https://github.com/*", "http://localhost:3000/*"]
 }
