@@ -10,9 +10,18 @@ We implemented this project with ReactJs, HTML, and CSS with the chrome api.
 
 ## How to Install and Run
 
-- Clone the repository
-- Npm install 
-- Npm run build
+- Clone the repository by typing this command
+```
+git clone https://github.com/90090/DandyGarden.git
+```
+- Install all the neccessary node_module files by typing this command
+```
+npm install
+```
+- To run the application, type this command
+```
+npm run build
+```
 - Go to manage extensions on chrome
 - Turn on developer mode
 - Click load unpacked
