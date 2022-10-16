@@ -55,12 +55,9 @@ When you buy a plant, the plant arrives in your garden and decrements your overa
 
 ## Credits
 
-Ethan Ligi: https://github.com/90090 
-Renee Bogdany: https://github.com/rkb4472 
-Jaden Seaton: https://github.com/jadens12
+- Ethan Ligi: https://github.com/90090 
+- Renee Bogdany: https://github.com/rkb4472 
+- Jaden Seaton: https://github.com/jadens12
 
 How we learned to implement a chrome extension: 
 - https://www.youtube.com/watch?v=pBPDJb_6Aps&t=3146s
-
-----
-
