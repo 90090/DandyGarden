@@ -1,3 +1,28 @@
 .app-container{
 	text-align: center;
 }
+
+#timer {
+	background-color: green;
+	color: white;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	padding-top: .5em;
+	padding-bottom: .51em;
+	margin: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: fit-content;
+	border-radius: 5px;
+}
+
+#timer:hover {
+	cursor: pointer;
+    background-color:rgb(1, 158, 1);
+    border: solid 2px rgb(5, 97, 5);
+}
+
+.timer-btn-div {
+	width: fit-content;
+	margin: auto;
+}

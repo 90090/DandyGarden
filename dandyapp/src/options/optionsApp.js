@@ -57,14 +57,19 @@ const OptionsApp = () => {
         </div>
       </div>
         <button onClick={togglePopup} className="add-plant-button"><span>+</span> BUY PLANT</button>
-        {/* <input
-      type="button"
-      value="Click to Open Popup"
-      onClick={togglePopup}
-    /> */}
+        
+        <div className="how-to-div">
+          <h3 className="how-to-title">How do you get points?</h3>
+          <ul className="how-to-bullets">
+            <li>Complete easy tasks - 5 points</li>
+            <li>Complete intermediate tasks - 15 points</li>
+            <li>Complete difficult tasks - 30 points</li>
+            <li>Working for 25 minutes - 15 points</li>
+          </ul>
+        </div>
+
+
     {isOpen && <PlantPopUp
-      // content={<>
-      // </>}
       handleClose={togglePopup}
       points={points}
       changePoints={setPoints}

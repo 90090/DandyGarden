@@ -1,12 +1,12 @@
 /*global chrome*/
 import React from 'react';
 import { useEffect, useState } from 'react';
+import './timer.css';
 
 const Timer = ({ hours = 0, minutes = 0, seconds = 0 }) => { 
 
     const [time, setTime] = useState({hours, minutes, seconds});
     const [work, setWork] = useState(true);
-    
     const tick = () => {
    
         if (time.hours === 0 && time.minutes === 0 && time.seconds === 0) {
@@ -17,6 +17,7 @@ const Timer = ({ hours = 0, minutes = 0, seconds = 0 }) => {
                 });
                 toggleWork()      
                 resetBreak()
+                
             } else{
                 
                 toggleWork()
@@ -39,10 +40,13 @@ const Timer = ({ hours = 0, minutes = 0, seconds = 0 }) => {
         const timerId = setInterval(() => tick(), 1000);
         return () => clearInterval(timerId);
     });
+
+    
        
     return (
-        <div>
-            <p>{`${time.hours.toString().padStart(2, '0')}:${time.minutes
+        <div className={work ? "timer-div" : "timer-div2"}>
+            <p>{work ? "Time to work!" : "Time to rest!"}</p>
+            <p className="timer-p">{`${time.minutes
             .toString()
             .padStart(2, '0')}:${time.seconds.toString().padStart(2, '0')}`}</p> 
             
